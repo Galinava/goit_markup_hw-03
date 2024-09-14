@@ -1,0 +1,213 @@
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
+
+  /* Fonts */
+  --font-family: "Roboto", sans-serif;
+  }
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color:currentColor;
+}
+
+body{
+  font-family: var(--font-family);
+  color: var(--navy-blue);
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* ==============HEADER============== */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+
+.header-logotip {
+  color: var(--navy-blue);
+}
+
+.header-link {
+  font-weight: 500;
+  color: var(--navy-blue);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--ocean);
+}
+
+.header-contact-link {
+  color: var(--slate);
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--ocean);
+}
+/* ============/HEADER============ */
+
+/* ============HERO============== */
+.hero-section {
+  background-color: var(--navy-blue);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: calc(60 / 56);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.04em;
+  color: var(--white);
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--iris);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--ocean);
+}
+/* ============/Hero============ */
+
+/* ============FEATURES======== */
+.features-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height:calc(24 / 20) ;
+  letter-spacing: 0.02em;
+}
+
+.features-text {
+  color: var(--slate);
+}
+/* ============/FEATURES======== */
+
+/* ===========ABOUT=========== */
+.about-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+}
+/* ===========/ABOUT=========== */
+
+/* ===========TEAM=========== */
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.team-autor {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.team-text {
+  text-align: center;
+  color: var(--slate);
+}
+/* ===========/TEAM=========== */
+
+/* ==========FOOTER========== */
+.footer {
+  background-color: var(--navy-blue);
+}
+
+.footer-logotip {
+  color: var(--cloud);
+}
+
+.footer-text {
+  color: var(--cloud);
+}
+/* ==============/FOOTER============== */
+
+
+/* ==========Portfolio======= */
+/* ==========Button========= */
+.button-primary {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--iris);
+  cursor: pointer;
+  background-color: var(--cloud);
+}
+
+.button-primary:hover,
+.button-primary:focus{
+  color: var(--white);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  background-color: var(--ocean);
+}
+/* ==========/Button========= */
+
+/* ========== Card =========*/
+.card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+}
+
+.card-text {
+  color: var(--slate);
+}
+/*=========== /Card ===========*/
+/* ==========/Portfolio======= */
