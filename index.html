@@ -3,106 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
+    <title>Web Studio</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <!-- Normalize -->
     <link
+      href="
+      https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
     />
-    <!--Custom styles -->
+    <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Header section-->
-    <header class="header-page">
-      <div class="header-page-container container">
-        <nav class="page-navigation">
-          <a class="logo link" href="#"
-            >Web<span class="header-logotip">Studio</span></a
-          >
-          <ul class="menu list">
-            <li class="menu-item">
-              <a class="menu-link link" href="#">Studio</a>
+    <!-- Header section -->
+    <header class="header">
+      <div class="header-container container">
+        <a class="logo link" href="./index.html"
+          >Web<span class="header-logo">Studio</span></a
+        >
+        <nav class="header-nav">
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link link" href="./index.html">Studio</a>
             </li>
 
-            <li class="menu-item">
-              <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+            <li class="header-item">
+              <a class="header-link link" href="./portfolio.html">Portfolio</a>
             </li>
 
-            <li class="menu-item">
-              <a class="menu-link link" href="#">Contacts</a>
+            <li class="header-item">
+              <a class="header-link link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="menu-contact list">
-          <li class="menu-contact-item">
-            <a class="menu-contact-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+        <ul class="header-contact-list list">
+          <li class="header-contact-item">
+            <a class="header-contact-link link" 
+            href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
 
-          <li class="menu-contact-item">
-            <a class="menu-contact-link link" href="tel:+11(000)111-11-11"
-              >+11 (000) 111-11-11</a
-            >
+          <li class="header-contact-item">
+            <a class="header-contact-link link" 
+            href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
           </li>
         </ul>
       </div>
     </header>
-    <!-- Hero -->
+
     <main>
-      <section class="hero-section">
+      <!-- Hero section -->
+      <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-
-          <div class="modal-wrapper-btn">
-            <button class="modal-btn button" type="button">
-              Order Service
-            </button>
-          </div>
+          <button class="hero-button btn" type="button">Order Service</button>
         </div>
       </section>
-      <!-- Features -->
-      <section class="section">
-        <div class="container">
-          <h2 class="hidden-title">Tasks</h2>
 
-          <ul class="features-list list">
-            <li class="features-item">
-              <h3 class="features-title">Strategy</h3>
-              <p class="features-text">
+      <!-- Feature section -->
+      <section class="feature section">
+        <div class="feature-container container">
+          <h2 class="hidden-title">Our Feature</h2>
+          <ul class="feature-list list">
+            <li class="feature-item">
+              <h3 class="feature-title subject-title">Strategy</h3>
+              <p class="feature-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-
-            <li class="features-item">
-              <h3 class="features-title">Punctuality</h3>
-              <p class="features-text">
+            
+            <li class="feature-item">
+              <h3 class="feature-title subject-title">Punctuality</h3>
+              <p class="feature-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
 
-            <li class="features-item">
-              <h3 class="features-title">Diligence</h3>
-              <p class="features-text">
+            <li class="feature-item">
+              <h3 class="feature-title subject-title">Diligence</h3>
+              <p class="feature-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
 
-            <li class="features-item">
-              <h3 class="features-title">Technologies</h3>
-              <p class="features-text">
+            <li class="feature-item">
+              <h3 class="feature-title subject-title">Technologies</h3>
+              <p class="feature-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -111,89 +106,107 @@
         </div>
       </section>
 
-      <!-- About -->
-      <section class="about">
-        <div class="about-container container">
-          <h2 class="about-title title-theme">What are we doing</h2>
-          <ul class="about-list card-list list">
-            <li class="about-item card-item">
+      <!-- What are we doing section -->
+      <section class="doing section">
+        <div class="doing-container container">
+          <h2 class="doing-title theme-title">What Are We Doing</h2>
+          <ul class="doing-list list">
+            <li class="doing-item">
               <img
-                class="about-image"
-                src="./images/about/monitor.jpg"
-                alt="statistics infographics on the monitor"
+                class="doing-img"
+                src="./images/what_are_we_doing/img1.jpg"
+                alt="Statistics infographics on the monitor"
                 width="360"
+                height="300"
               />
             </li>
 
-            <li class="about-item card-item">
+            <li class="doing-item">
               <img
-                class="about-image"
-                src="./images/about/phone.jpg"
-                alt="phone with messages"
+                class="doing-img"
+                src="./images/what_are_we_doing/img2.jpg"
+                alt="Phone with messages"
                 width="360"
+                height="300"
               />
             </li>
 
-            <li class="about-item card-item">
+            <li class="doing-item">
               <img
-                class="about-image"
-                src="./images/about/phone-laptop.jpg"
-                alt="phone and laptop"
+                class="doing-img"
+                src="./images/what_are_we_doing/img3.jpg"
+                alt="Phone and laptop with website the most inspiring places"
                 width="360"
+                height="300"
               />
             </li>
           </ul>
         </div>
       </section>
-      <!-- Team -->
+      
+      <!-- Our team section -->
       <section class="team section">
         <div class="container">
-          <h2 class="team-title title-theme">Our Team</h2>
-          <ul class="team-list list">
-            <li class="team-item">
+          <h2 class="team-title theme-title">Our Team</h2>
+          <ul class="team-list card-content-list list">
+            <li class="team-item card-content-item">
               <img
-                class="team-image"
-                src="./images/Specialists/mark-guerrero.jpg"
-                alt="expert product designer"
+                class="team-img"
+                src="./images/team/mark-guerrero.jpg"
+                alt="Mark Guerrero product designer"
+                width="264"
+                height="260"
               />
-              <div class="team-container">
-                <h3 class="team-autor">Mark Guerrero</h3>
+              <div class="team-wrapper">
+                <h3 class="team-title-secondary subject-title">
+                  Mark Guerrero
+                </h3>
                 <p class="team-text">Product Designer</p>
               </div>
             </li>
 
             <li class="team-item">
               <img
-                class="team-image"
-                src="./images/Specialists/tom-ford.jpg"
-                alt="expert frontend developer"
+                class="team-img"
+                src="./images/team/tom-ford.jpg"
+                alt="Tom Ford frontend developer"
+                width="264"
+                height="260"
               />
-              <div class="team-container">
-                <h3 class="team-autor">Tom Ford</h3>
+              <div class="team-wrapper">
+                <h3 class="team-title-secondary subject-title">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
               </div>
             </li>
 
             <li class="team-item">
               <img
-                class="team-image"
-                src="./images/Specialists/camila-garcia.jpg"
-                alt="expert marketing"
+                class="team-img"
+                src="./images/team/camila-garcia.jpg"
+                alt="Camila Garcia marketing"
+                width="264"
+                height="260"
               />
-              <div class="team-container">
-                <h3 class="team-autor">Camila Garcia</h3>
+              <div class="team-wrapper">
+                <h3 class="team-title-secondary subject-title">
+                  Camila Garcia
+                </h3>
                 <p class="team-text">Marketing</p>
               </div>
             </li>
 
             <li class="team-item">
               <img
-                class="team-image"
-                src="./images/Specialists/daniel-wilson.jpg"
-                alt="expert ui designer"
+                class="team-img"
+                src="./images/team/daniel-wilson.jpg"
+                alt="Daniel Wilson designer"
+                width="264"
+                height="260"
               />
-              <div class="team-container">
-                <h3 class="team-autor">Daniel Wilson</h3>
+              <div class="team-wrapper">
+                <h3 class="team-title-secondary subject-title">
+                  Daniel Wilson
+                </h3>
                 <p class="team-text">UI Designer</p>
               </div>
             </li>
@@ -201,11 +214,12 @@
         </div>
       </section>
     </main>
-    <!-- Footer -->
+    
+    <!-- Footer section -->
     <footer class="footer">
       <div class="container">
-        <a class="logo logo-footer link" href="#"
-          >Web<span class="footer-logotip">Studio</span></a
+        <a class="logo link" href=""
+          >Web<span class="footer-logo">Studio</span></a
         >
         <p class="footer-text">
           Increase the flow of customers and sales for your business with
